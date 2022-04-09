@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,8 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClick(){
-        Intent intent = new Intent(this,secondActivity.class);
+    public void switchActivity(View view){
+        Intent intentToContinent = new Intent(this, Continents.class);
+        startActivity(intentToContinent);
     }
 
-}
+}//end of class
