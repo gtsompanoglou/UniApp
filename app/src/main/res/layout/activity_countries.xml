@@ -5,35 +5,43 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context=".Continents">
+    tools:context=".Countries">
 
     <Button
-        android:id="@+id/but_Europe"
+        android:id="@+id/but_Greece"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:onClick="switchActivity"
-        android:text="Europe" />
+        android:text="Greece" />
 
     <Button
-        android:id="@+id/but_America"
+        android:id="@+id/but_France"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="America" />
-
-    <Button
-        android:id="@+id/but_Asia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Asia"
+        android:text="France"
         />
 
     <Button
-        android:id="@+id/but_Africa"
+        android:id="@+id/but_England"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Africa"/>
+        android:text="England"
+        />
+
+    <Button
+        android:id="@+id/but_Belgium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Belgium"/>
+
+    <Button
+        android:id="@+id/but_Italy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Italy"/>
+
 </LinearLayout>
