@@ -14,9 +14,9 @@ public class Countries extends AppCompatActivity {
         setContentView(R.layout.activity_countries);
     }
 
-    public void switchActivity(View view){
-        Intent intentToUniversity = new Intent(this,University.class);
-        startActivity(intentToUniversity);
+    public void switchActivityToGreece(View view) {
+        Intent intentToGreece = new Intent(this, Greece.class);
+        startActivity(intentToGreece);
     }
 
 }//end of class

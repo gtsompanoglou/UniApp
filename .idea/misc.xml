@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/UniApp/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/UniApp/app/src/main/res/layout/activity_continents.xml" value="0.25" />
+        <entry key="..\:/UniApp/app/src/main/res/layout/activity_countries.xml" value="0.1" />
+        <entry key="..\:/UniApp/app/src/main/res/layout/activity_greece.xml" value="0.17916666666666667" />
+        <entry key="..\:/UniApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/UniApp/app/src/main/res/layout/activity_select_continent.xml" value="0.16145833333333334" />
+        <entry key="..\:/UniApp/app/src/main/res/layout/activity_university.xml" value="0.1" />
       </map>
     </option>
   </component>
