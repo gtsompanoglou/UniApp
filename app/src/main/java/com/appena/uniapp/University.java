@@ -10,6 +10,7 @@ import android.view.View;
 
 public class University extends AppCompatActivity {
     public Country country;
+    public  String msgCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,15 @@ public class University extends AppCompatActivity {
         setContentView(R.layout.activity_greece);
 
         Intent receiveIntent = getIntent();
-        Country country = (Country) receiveIntent.getSerializableExtra("com.appena.uniapp");
-        this.country.msgCode=country.msgCode;
-        this.country.name=country.name;
-        this.country.uriLink=country.uriLink;
-        this.country.uriLocation=country.uriLocation;
+        String msgCode =  receiveIntent.getStringExtra(intentContents.SECOND_KEY);
+        this.msgCode=msgCode;
+            if(msgCode.equals("EUGR")){
+                Country greece = new Country("Greece", "GR", "http://www.dib.uth.gr", "geo:38.91309966134338, 22.427587681605267?z=160");
+                this.country.msgCode=country.msgCode;
+                this.country.name=country.name;
+                this.country.uriLink=country.uriLink;
+                this.country.uriLocation=country.uriLocation;
+            }
     }
 
     public void gotoSite(View view){
@@ -42,3 +47,5 @@ public class University extends AppCompatActivity {
         }
     }
 }//end of class
+
+//                Country greece = new Country("Greece", "GR", "http://www.dib.uth.gr", "geo:38.91309966134338, 22.427587681605267?z=160");

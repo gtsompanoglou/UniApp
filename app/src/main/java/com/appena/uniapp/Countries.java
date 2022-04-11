@@ -13,6 +13,7 @@ import org.w3c.dom.Text;
 public class Countries extends AppCompatActivity {
 
 public  String msgCode;
+public  String newMsgCode;
 
     @Override
     public void onCreate(Bundle s){
@@ -74,9 +75,9 @@ public  String msgCode;
 */
     public void gotoCountry1(View view){ //edo erxontai oles oi xores apo to proto koympi
             if(this.msgCode.equals("EU")) {//ara irthe apo tin ellada
-                Country greece = new Country("Greece", "GR", "http://www.dib.uth.gr", "geo:38.91309966134338, 22.427587681605267?z=160");
                 Intent intentToGreece = new Intent(this, University.class);
-                intentToGreece.putExtra("com.appena.uniapp",greece);
+                newMsgCode=msgCode+"GR";
+                intentToGreece.putExtra(intentContents.SECOND_KEY,newMsgCode);
                 startActivity(intentToGreece);
             }//allios costa rica kai meta country2 sinartisi
     }//end of gotoCountry
