@@ -19,12 +19,33 @@ public class Continents extends AppCompatActivity {
         startActivity(intentToCountry);
     }
 
-    public  void switchActPutExtra(View view){
+    public  void switchActPutExtraEurope(View view){
+        Intent intentPut = new Intent(this,Countries.class);
+        String sndMsgCode ="EU";
+        intentPut.putExtra("com.appena.uniapp",sndMsgCode);
+        startActivity(intentPut);
+    }
+
+    public  void switchActPutExtraAmerica(View view){
         Intent intentPut = new Intent(this,Countries.class);
         String sndMsgCode ="AMR";
         intentPut.putExtra("com.appena.uniapp",sndMsgCode);
         startActivity(intentPut);
     }
+
+    public  void switchActPutExtraAsia(View view){
+        Intent intentPut = new Intent(this,Countries.class);
+        String sndMsgCode ="AS";
+        intentPut.putExtra("com.appena.uniapp",sndMsgCode);
+        startActivity(intentPut);
+    }
+    public  void switchActPutExtraAfrica(View view){
+        Intent intentPut = new Intent(this,Countries.class);
+        String sndMsgCode ="AF";
+        intentPut.putExtra("com.appena.uniapp",sndMsgCode);
+        startActivity(intentPut);
+    }
+
 
 
 }//end of class
