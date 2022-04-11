@@ -19,4 +19,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentToContinent);
     }
 
+    public void switchActPutExtra(View view){
+
+    }
+
 }//end of class
