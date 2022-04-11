@@ -11,6 +11,9 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class Countries extends AppCompatActivity {
+
+public  String msgCode;
+
     @Override
     public void onCreate(Bundle s){
         super.onCreate(s);
@@ -18,6 +21,7 @@ public class Countries extends AppCompatActivity {
 
         Intent receiveIntent = getIntent();
         String msgCode = receiveIntent.getStringExtra("com.appena.uniapp");
+        this.msgCode=msgCode;
 
         if(msgCode.equals("EU")){
             Button but1= (Button)findViewById(R.id.but_1);
@@ -61,10 +65,20 @@ public class Countries extends AppCompatActivity {
             }
     }
 
-
+/*
     public void switchActivityToGreece(View view) {
-        Intent intentToGreece = new Intent(this, Greece.class);
+        Country greece = new Country("Greece","GR","http://www.dib.uth.gr","geo:38.91309966134338, 22.427587681605267?z=160");
+        Intent intentToGreece = new Intent(this, University.class);
         startActivity(intentToGreece);
     }
+*/
+    public void gotoCountry1(View view){ //edo erxontai oles oi xores apo to proto koympi
+            if(this.msgCode.equals("EU")) {//ara irthe apo tin ellada
+                Country greece = new Country("Greece", "GR", "http://www.dib.uth.gr", "geo:38.91309966134338, 22.427587681605267?z=160");
+                Intent intentToGreece = new Intent(this, University.class);
+                intentToGreece.putExtra("com.appena.uniapp",greece);
+                startActivity(intentToGreece);
+            }//allios costa rica kai meta country2 sinartisi
+    }//end of gotoCountry
 
 }//end of class
