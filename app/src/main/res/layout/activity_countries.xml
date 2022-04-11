@@ -16,11 +16,11 @@
         android:text="Greece" />
 
     <Button
-        android:id="@+id/but_France"
+        android:id="@+id/but_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="France"
+
         />
 
     <Button
@@ -38,11 +38,10 @@
         android:layout_margin="10dp"
         android:text="Belgium"/>
 
-    <Button
-        android:id="@+id/but_Italy"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Italy"/>
-
+        android:layout_height="match_parent"
+        android:id="@+id/outputText"
+        android:text="REEE"
+     />
 </LinearLayout>

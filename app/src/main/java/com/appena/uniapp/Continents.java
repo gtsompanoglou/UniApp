@@ -19,5 +19,12 @@ public class Continents extends AppCompatActivity {
         startActivity(intentToCountry);
     }
 
+    public  void switchActPutExtra(View view){
+        Intent intentPut = new Intent(this,Countries.class);
+        String sndMsgCode ="AMR";
+        intentPut.putExtra("com.appena.uniapp",sndMsgCode);
+        startActivity(intentPut);
+    }
+
 
 }//end of class
