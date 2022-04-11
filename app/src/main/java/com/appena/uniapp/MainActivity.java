@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void exitButton(View view){
         finish();
-    }
+
+
 
 }//end of class
