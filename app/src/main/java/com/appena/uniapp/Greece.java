@@ -7,7 +7,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
-import java.net.URI;
 
 public class Greece extends AppCompatActivity {
 
