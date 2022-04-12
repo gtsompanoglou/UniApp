@@ -21,11 +21,11 @@ public  String newMsgCode;
         setContentView(R.layout.activity_countries);
 
         Intent receiveIntent = getIntent();
-        String msgCode = receiveIntent.getStringExtra("com.appena.uniapp");
+        String msgCode = receiveIntent.getStringExtra(intentContents.FIRST_KEY);
         this.msgCode=msgCode;
 
         if(msgCode.equals("EU")){
-            Button but1= (Button)findViewById(R.id.but_1);
+            Button but1= (Button)findViewById(R.id.but_country_1);
             but1.setText("Greece");
             Button but2 = (Button)findViewById(R.id.but_2);
             but2.setText("France");
@@ -34,7 +34,7 @@ public  String newMsgCode;
             Button but4 = (Button)findViewById(R.id.but_4);
             but4.setText("Bulgaria");
         }else if(msgCode.equals("AMR")){
-            Button but1= (Button)findViewById(R.id.but_1);
+            Button but1= (Button)findViewById(R.id.but_country_1);
             but1.setText("Costa Rica");
             Button but2 = (Button)findViewById(R.id.but_2);
             but2.setText("Mexico");
@@ -43,7 +43,7 @@ public  String newMsgCode;
             Button but4 = (Button)findViewById(R.id.but_4);
             but4.setText("Colombia");
             } else if(msgCode.equals("AS")) {
-            Button but1 = (Button) findViewById(R.id.but_1);
+            Button but1 = (Button) findViewById(R.id.but_country_1);
             but1.setText("China");
             Button but2 = (Button) findViewById(R.id.but_2);
             but2.setText("Japan");
@@ -52,7 +52,7 @@ public  String newMsgCode;
             Button but4 = (Button) findViewById(R.id.but_4);
             but4.setText("Korea");
         }else if(msgCode.equals("AF")) {
-            Button but1 = (Button) findViewById(R.id.but_1);
+            Button but1 = (Button) findViewById(R.id.but_country_1);
             but1.setText("Kenya");
             Button but2 = (Button) findViewById(R.id.but_2);
             but2.setText("Egypt");
@@ -77,6 +77,8 @@ public  String newMsgCode;
             if(this.msgCode.equals("EU")) {//ara irthe apo tin ellada
                 Intent intentToGreece = new Intent(this, University.class);
                 newMsgCode=msgCode+"GR";
+                Button but_country_1 = (Button) findViewById(R.id.but_country_1);
+                but_country_1.setText(newMsgCode);
                 intentToGreece.putExtra(intentContents.SECOND_KEY,newMsgCode);
                 startActivity(intentToGreece);
             }//allios costa rica kai meta country2 sinartisi

@@ -8,7 +8,7 @@
     tools:context=".Countries">
 
     <Button
-        android:id="@+id/but_1"
+        android:id="@+id/but_country_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"

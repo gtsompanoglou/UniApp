@@ -22,7 +22,7 @@ public class Continents extends AppCompatActivity {
     public  void switchActPutExtraEurope(View view){
         Intent intentPut = new Intent(this,Countries.class);
         String sndMsgCode ="EU";
-        intentPut.putExtra("com.appena.uniapp",sndMsgCode);
+        intentPut.putExtra(intentContents.FIRST_KEY,sndMsgCode);
         startActivity(intentPut);
     }
 
