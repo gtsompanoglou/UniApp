@@ -13,9 +13,6 @@
             android:name=".University"
             android:exported="false" />
         <activity
-            android:name=".Greece"
-            android:exported="false" />
-        <activity
             android:name=".Countries"
             android:exported="false" />
         <activity

@@ -23,6 +23,7 @@ public  String newMsgCode;
         Intent receiveIntent = getIntent();
         String msgCode = receiveIntent.getStringExtra(intentContents.FIRST_KEY);
         this.msgCode=msgCode;
+        intentContents.smgCode=this.msgCode;
 
         if(msgCode.equals("EU")){
             Button but1= (Button)findViewById(R.id.but_country_1);
@@ -66,22 +67,15 @@ public  String newMsgCode;
             }
     }
 
-/*
-    public void switchActivityToGreece(View view) {
-        Country greece = new Country("Greece","GR","http://www.dib.uth.gr","geo:38.91309966134338, 22.427587681605267?z=160");
-        Intent intentToGreece = new Intent(this, University.class);
-        startActivity(intentToGreece);
-    }
-*/
-    public void gotoCountry1(View view){ //edo erxontai oles oi xores apo to proto koympi
-            if(this.msgCode.equals("EU")) {//ara irthe apo tin ellada
+    public void gotoCountry1(View view){
+            if(intentContents.smgCode.equals("EU")) {
                 Intent intentToGreece = new Intent(this, University.class);
                 newMsgCode=msgCode+"GR";
                 Button but_country_1 = (Button) findViewById(R.id.but_country_1);
                 but_country_1.setText(newMsgCode);
                 intentToGreece.putExtra(intentContents.SECOND_KEY,newMsgCode);
                 startActivity(intentToGreece);
-            }//allios costa rica kai meta country2 sinartisi
+            }
     }//end of gotoCountry
 
 }//end of class

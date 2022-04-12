@@ -15,7 +15,7 @@ public class University extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_greece);
+        setContentView(R.layout.activity_university);
 
         Intent receiveIntent = getIntent();
         String msgCode =  receiveIntent.getStringExtra(intentContents.SECOND_KEY);
